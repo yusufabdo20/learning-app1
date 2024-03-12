@@ -1,7 +1,4 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:testtt/Feature/Seasons/data/models/season_model/season_model.dart';
-import 'package:testtt/Feature/Seasons/data/repositories/seasons_repo_imp.dart';
 import 'package:testtt/Feature/Teams/data/models/team_model.dart';
 import '../../../../core/api/api_services.dart';
 import '../../../../core/helper/locator.dart';
@@ -64,7 +61,7 @@ class _TeamsScreenState extends State<TeamsScreen> {
                     itemBuilder: (context, index) {
                       return Card(
                         elevation: 10,
-                        margin: EdgeInsets.all(10),
+                        margin: const EdgeInsets.all(10),
                         child: Padding(
                           padding: const EdgeInsets.all(10.0),
                           child: ListTile(
@@ -99,7 +96,7 @@ class _TeamsScreenState extends State<TeamsScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset('assets/images/empty-box.png'),
-                  Text("NO Leagues found"),
+                  const Text("NO Leagues found"),
                 ],
               ),
             );

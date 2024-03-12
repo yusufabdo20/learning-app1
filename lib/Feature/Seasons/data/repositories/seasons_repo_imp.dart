@@ -7,7 +7,6 @@ class SeasonsRepoImp {
   ApiService apiService;
   SeasonsRepoImp({required this.apiService});
   Future<List<SeasonModel>> getSeasons(String id) async {
-    print("DATA IN Country REPO IMP ✨getSEASONSSS✨");
     var data = await apiService.get(
       endPoint: AppConstants.get_all_seasons,
       queryParameters: {

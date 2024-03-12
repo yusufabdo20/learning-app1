@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:testtt/Feature/Seasons/data/models/season_model/season_model.dart';
 import 'package:testtt/Feature/Seasons/data/repositories/seasons_repo_imp.dart';
@@ -76,7 +75,7 @@ class _SeasonsScreenState extends State<SeasonsScreen> {
                         child: Card(
                           elevation: 10,
                           
-                          margin: EdgeInsets.all(10),
+                          margin: const EdgeInsets.all(10),
                           child: Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Text(
@@ -102,7 +101,7 @@ class _SeasonsScreenState extends State<SeasonsScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset('assets/images/empty-box.png'),
-                  Text("NO Leagues found"),
+                  const Text("NO Leagues found"),
                 ],
               ),
             );

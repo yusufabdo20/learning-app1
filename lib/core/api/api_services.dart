@@ -44,11 +44,9 @@ class ApiService {
     required String endPoint,
   }) async {
     var dataa = json.encode(data);
-    print('dataa');
-    print(dataa);
 
     var response = await dio.request(
-      '${AppConstants.baseUrl + endPoint}',
+      AppConstants.baseUrl + endPoint,
       options: Options(
         method: 'POST',
       ),
@@ -56,10 +54,8 @@ class ApiService {
       data: dataa,
     );
     if (response.statusCode == 200) {
-      print("json.encode(response.data)");
-      print(json.encode(response.data));
+   
     } else {
-      print(response.statusMessage);
     }
     return response.data;
   }

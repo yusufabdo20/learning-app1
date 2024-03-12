@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:testtt/core/helper/global_methods.dart';
 import '../../../../core/api/api_services.dart';
@@ -129,7 +128,7 @@ class _LeagueScreenState extends State<LeagueScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset('assets/images/empty-box.png'),
-                  Text("NO Leagues found"),
+                  const Text("NO Leagues found"),
                 ],
               ),
             );

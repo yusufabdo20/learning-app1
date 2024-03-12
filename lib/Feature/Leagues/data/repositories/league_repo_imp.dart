@@ -6,7 +6,6 @@ class LeagueRepoImp {
   ApiService apiService;
   LeagueRepoImp({required this.apiService});
   Future<List<LeagueModel>> getLeagues(String countryName) async {
-    print("DATA IN Country REPO IMP ✨getCCountriess✨");
     var data = await apiService.get(
       endPoint: AppConstants.get_all_leagues,
       queryParameters: {

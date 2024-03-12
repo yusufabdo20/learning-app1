@@ -54,7 +54,6 @@ class ServerError extends Failures {
   }
   factory ServerError.fromBadResponse(statusCode, dynamic response) {
     if (statusCode == 400 || statusCode == 403) {
-      print(response['massage']);
       return ServerError(response['massage']);
     } else if (statusCode == 401) {
       // return ServerError("ERROR RRRR 401");

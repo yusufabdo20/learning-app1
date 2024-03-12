@@ -1,4 +1,3 @@
-import 'package:collection/collection.dart';
 
 class LeagueModel {
   final String? idLeague;

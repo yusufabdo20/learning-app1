@@ -23,31 +23,31 @@ class GlobalMethods {
           content: content,
           actions: [
             titleButton1 != null
-                ? Container(
+                ? SizedBox(
                     width: double.infinity,
                     child: TextButton(
                       onPressed: onPressedButton1,
+                      style: TextButton.styleFrom(
+                        backgroundColor: AppColors.primaryColorBlue,
+                      ),
                       child: TextBuilder(
                         titleButton1,
                         color: AppColors.whiteColor,
-                      ),
-                      style: TextButton.styleFrom(
-                        backgroundColor: AppColors.primaryColorBlue,
                       ),
                     ),
                   )
                 : Container(),
             titleButton2 != null
-                ? Container(
+                ? SizedBox(
                     width: double.infinity,
                     child: TextButton(
                       onPressed: onPressedButton2,
+                      style: TextButton.styleFrom(
+                        backgroundColor: Colors.red,
+                      ),
                       child: TextBuilder(
                         titleButton2,
                         color: AppColors.whiteColor,
-                      ),
-                      style: TextButton.styleFrom(
-                        backgroundColor: Colors.red,
                       ),
                     ),
                   )

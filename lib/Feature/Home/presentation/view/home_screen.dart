@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home screen"),
+        title: const Text("Home screen"),
       ),
       body: SafeArea(
           child: FutureBuilder<List<CountryModel>>(
